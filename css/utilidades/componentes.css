@@ -1,0 +1,22 @@
+.botao{
+    padding: 16px 32px;
+    /* podemos tambem definir apenas as cores, visto que, por padrão o linear gradient já é 180deg (de cima pra baixo e começa em 0% e vai até 100%.*/
+    background: linear-gradient(180deg, #ffbb00 0%, #f2a50c 100%);
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    color: #332200;
+    font-size: 1.125rem;
+    font-family: 'Poppins';
+    font-weight: 600;  
+}
+.botao:hover{
+    background: linear-gradient(180deg, #ffb60d 0%, #e59317 100%);
+}
+@media (max-width: 600px){
+    .botao{
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+}
