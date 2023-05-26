@@ -1,5 +1,5 @@
 .header-bg{
-    background-color: #000000;
+    background-color: var(--cor-12);
 }
 .header{
     display: flex;
@@ -7,14 +7,8 @@
     gap: 20px;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 1200px;
-
-    /* centralizando elemento para ele não continuar expandindo*/
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-menu{
@@ -26,11 +20,7 @@
 .header-menu a{
     padding: 1rem 0px;
     display: inline-block;
-    color: #ffffff;
-    font-size: 1.125rem;
     position: relative;
-    font-family: 'Poppins';
-    font-weight: 400;
 }
 .header-menu a:after{
     content: "";
@@ -40,7 +30,7 @@
     width: 0;
     transition: 0.3s;
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--cor-0);
 }
 .header-menu a:hover:after{
     width: 100%;
@@ -50,12 +40,12 @@
         gap: 20px;
     }
     .header-menu a{
-        background-color: #111111;
+        background-color: var(--cor-11);
         padding: 0.75rem 1rem;
         border-radius: 4px;
     }
     .header-menu a:hover{
-        background-color: #2e2e2e;
+        background-color: var(--cor-12);
     }
     .header-menu a:after{
         display: none;
